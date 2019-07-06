@@ -25,6 +25,7 @@ import java.util.List;
 @RequestMapping("user")
 public class UserController {
 
+    //测试下push
     private final Logger logger = LoggerFactory.getLogger(UserController.class);
 
     /**
