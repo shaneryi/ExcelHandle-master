@@ -283,8 +283,6 @@ public class ImportExcel {
                 return new Integer(((ExcelField) o1[0]).sort()).compareTo(
                         new Integer(((ExcelField) o2[0]).sort()));
             }
-
-            ;
         });
         //log.debug("Import column count:"+annotationList.size());
         // Get excel data
