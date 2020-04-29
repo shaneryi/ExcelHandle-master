@@ -167,7 +167,7 @@ public class ImportExcel {
      * @return
      */
     public int getLastDataRowNum() {
-        return this.sheet.getLastRowNum() + headerNum;
+        return this.sheet.getLastRowNum();
     }
 
     /**
@@ -288,7 +288,7 @@ public class ImportExcel {
         // Get excel data
         List<E> dataList = Lists.newArrayList();
         //循环获取每一行的数据
-        for (int i = this.getDataRowNum(); i < this.getLastDataRowNum(); i++) {
+        for (int i = this.getDataRowNum(); i <= this.getLastDataRowNum(); i++) {
             //实例化对象
             E e = (E) cls.newInstance();
             int column = 0;
